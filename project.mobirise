@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Sushiswap 2",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/sushi-logo.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://sushiswapt.github.io/sitemap.xml\n\n\n\n\n\n\n\n\n\n\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://sushiswapt.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "yiqi6qblh4",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Sushiswap™ | Sushiswap Exchange™ | Official Website",
+        "meta_descr": "Sushiswap allow Swap, earn, stack yields, lend, borrow &amp; leverage, all on one decentralized, community driven platform. Welcome home to SushiSwap.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/sushiswap.webp\" alt=\"sushiswap\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tY7FUIiAQQ",
+          "_anchor": "image04-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#edefeb"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Sushiswap™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">DeFi, the only place where unicorns and cartoon sushi face off in a battle for liquidity. Uniswap has been one of the most successful DeFi protocols for swapping tokens on Ethereum. It was created by a small team of passionate builders who have made the code open-source and available for anyone to fork. And that’s exactly what SushiSwap did!\n<br>\n<br><a href=\"https://sushiswapt.github.io/\" class=\"text-primary\"><b>SushiSwap</b></a> is a fork of Uniswap that adds the appetizing SUSHI token. It grants control over the protocol to holders and pays a portion of fees to them. Let’s see how you can get it on your plate!\n<br>\n<br>Introduction\n<br>As the Decentralized Finance (or DeFi) space evolves, an increasing number of novel financial platforms continue to emerge. We’ve seen how things like flash loans and yield farming (or liquidity mining) can be leveraged by investors to make money.\n<br>\n<br>Uniswap has solidified its position as one of the core DeFi protocols with one of the largest trading volumes. In spite of its decentralized ethos and heavy reliance on smart contracts, however, users don’t have much of a say when it comes to its development direction.\n<br>\n<br>SushiSwap, a new entrant to the field, promised to change that. And over $1 billion worth of value locked into the protocol – only a few days after launch – suggests that many would be interested in this change. In this article, we’ll discuss the Uniswap fork that’s taking the crypto space by storm.\n<br>\n<br>What is SushiSwap?\n<br>SushiSwap was launched in September 2020 by two anonymous developers called Chef Nomi and 0xMaki. It is one of the most popular Decentralized Applications (DApp) on the Ethereum blockchain. SushiSwap adopts the automated market-making (AMM) model for its decentralized exchange (DEX) protocol. Simply put, there is no order book on SushiSwap. Instead, the buying and selling of crypto are facilitated by smart contracts and the price is determined by an algorithm.\n<br>\n<br><a href=\"https://www.sushi.com/swap\" class=\"text-primary\">SushiSwap</a> began as a fork of Uniswap. It used the code of Uniswap to build its foundation while also introducing some key differences – most notably, rewards are distributed in SUSHI tokens. Liquidity providers on SushiSwap are rewarded with the protocol’s native token SUSHI, which is also a governance token. Unlike Uniswap (UNI), SUSHI holders can continue to earn rewards even after they stop providing liquidity. \n<br>\n<br>When it was first launched, SushiSwap incentivized liquidity providers to stake their liquidity pool (LP) tokens on Uniswap by paying out extra SUSHI rewards with a high annual interest rate. Within a week’s time, SushiSwap successfully attracted over $1 billion USD liquidity and the total value locked reached over $150 million dollars. The staked LP tokens were then migrated from Uniswap to SushiSwap after two weeks. This means that all Uniswap LP tokens staked on SushiSwap were redeemed on Uniswap for the tokens they represent. New liquidity pools were also created with them on SushiSwap, marking the launch of the SushiSwap exchange.\n<br>\n<br>In Q2 2021, the SushiSwap ecosystem unveiled its latest addition, a non-fungible token (NFT) platform called Shoyu. The idea of Shoyu actually came from a SUSHI governance member, who proposed to make Shoyu an easy-to-use NFT platform. It aims to tackle the current shortcomings of NFT marketplaces, such as limited file format options, limited image sizes, and the high transaction fees on Ethereum.\n<br>\n<br>What is SUSHI?\n<br>SUSHI is the native token of SushiSwap. It is an ERC-20 token distributed to liquidity providers on SushiSwap via liquidity mining. SUSHI has a maximum supply of 250 million tokens. The supply of SUSHI is dependent on the block rate. As of November 2021, it is created at a rate of 100 tokens per block, and its circulating supply has already reached approximately 50% of the total supply at 127 million tokens.\n<br>\n<br>SUSHI entitles holders to the governance rights and a portion of the fees paid to the protocol. In a simplified way, we can say that the SUSHI community owns the protocol. Why has this spurred so much interest? Well, community governance is heavily intertwined with the DeFi ethos. The growth of liquidity mining (yield farming) as a valid method for token distribution has given rise to an abundance of new token launches. \n<br>\n<br>Those fair token launch models aim to level the playing field for everyone involved, and they often include no premines, little or no founder allocation, and equal distribution based on the amount of funds supplied by each user. In most cases, the tokens distributed also grant governance rights to token holders.\n<br>\n<br>OK, but what can token holders do with these governance rights? On SushiSwap, anyone can submit a SushiSwap Improvement Proposal (SIP), which SUSHI holders can vote on. These can be minor or even major changes to the SushiSwap protocol. Instead of a more traditional team like Uniswap, the development of SushiSwap is in the hands of SUSHI token holders. \n<br>\n<br>A strong community can be a powerful asset for any token project, but this is especially true for a DeFi protocol. MISO, or Minimal Initial SushiSwap Offering, for example, is a product that arose from a governance proposal. It is a token launchpad platform in the SushiSwap ecosystem tailored to meet the expectations of the SUSHI community. MISO allows individuals and communities to launch their new project tokens through the SushiSwap platform.\n<br>\n<br>How does SushiSwap work?\n<br>As mentioned, SushiSwap is an automated market maker (AMM) protocol that works as a decentralized exchange. There is no order book or centralized authority. Cryptocurrency trading on SushiSwap is processed by the smart contracts in liquidity pools. A liquidity pool is where SushiSwap users become liquidity providers (LP) by locking their crypto assets. Anyone can be a liquidity provider on SushiSwap and earn rewards in proportion to their share of the pool. This is done by depositing an equivalent value of two tokens in the pool. Each pool works like a market, where other users can come to buy and sell tokens. For a more comprehensive explanation on how AMM works in DEX protocols, check out our Uniswap article.\n<br>\n<br>On SushiSwap, you can swap ERC-20 tokens as you would on other DEX protocols. For example, you can exchange stablecoins like USDT and BUSD into cryptocurrencies like bitcoin (BTC) and ether (ETH). Also, there are different sushi-themed functions for you to earn passive income. For example, you can stake SUSHI into the SushiBar and receive xSUSHI. xSUSHI staked allows holders to earn a 0.05% reward fee of all trades from all liquidity pools. Following the launch of Shoyu, SUSHI holders who stake their tokens for xSUSHI will also be eligible to receive 2.5% of every NFT trade on the NFT marketplace.\n<br>\n<br>BentoBox is another feature for earning rewards on SushiSwap. It is an innovative vault that allows users to take advantage of all available yield-earning tools on SushiSwap. This means that by depositing your assets into BentoBox, you can automatically earn interest from staking on SushiBar, as well as from lending them to other users. At the same time, xSUSHI holders can also earn rewards from the transaction fees accrued from BentoBox.\n<br>\n<br>Uniswap vs. SushiSwap\n<br>It’s no secret that crypto is deeply rooted in the spirit of open-source. Many think that Bitcoin and a growing number of permissionless DeFi protocols act as new kinds of public goods in the form of software. Since these projects are so easily copied and relaunched with small changes, it’s only natural that this leads to competition between similar products. We could assume, however, that this should ultimately lead to the best products for the end-user.\n<br>\n<br>It’s without a doubt that the DeFi space owes significant advancements to the Uniswap team. But we could see a future where even both Uniswap and SushiSwap (or other forks) flourish. Uniswap might remain at the forefront of innovation in the AMM space, while SushiSwap could provide an alternative that’s more focused on features that the community wants to see.\n<br>\n<br>With that said, fragmenting liquidity between similar protocols isn’t ideal. If you’ve read our Uniswap article, you know that AMMs work best with as much liquidity in the pools as possible. If a lot of the liquidity in DeFi is split between many different AMM protocols, that could lead to a worse experience for the end-user.\n<br>\n<br>How to provide liquidity for SushiSwap?\n<br>So you’ve decided that you want to stake tokens in return for SUSHI. The first step is to acquire those tokens. You can purchase the cryptocurrencies for staking from centralized crypto exchanges like Binance, or decentralized exchanges like Uniswap and 1inch. \n<br>\n<br>In this example, we’re going to provide liquidity for BNB-ETH, but feel free to follow along with another pair (provided, of course, that the LP tokens are usable on SushiSwap).\n<br>\n<br>1. Head to Sushi and click [Enter App] to enter SushiSwap.\n<br>2. Go to [Pool] from the top navigation bar. You will need to connect your wallet to get started. You can use Binance Wallet, MetaMask, WalletConnect, or any other supported Ethereum wallet. In this example, we will use Binance Wallet.\n<br>3. After clicking [Binance], you will see a pop-up. Enter your password to unlock the wallet, or click [Create a new wallet] if you don’t have one. \n<br>4. Click [Connect].\n<br>5. You will be redirected back to the SushiSwap Pool. Click [Add] to add liquidity.\n<br>6. Click [Select a token] to find the pair of cryptocurrencies you wish to provide liquidity. Then, enter the amount for one of the tokens (e.g., 1 BNB). The system will automatically calculate the amount needed for the other token.\n<br>7. You will see another pop-up window with the details and the gas fee for this transaction. Click [Confirm] to approve, or click [Reject] to edit.\n<br>8. Click [Confirm Adding Liquidity] and then [Confirm Supply] to add liquidity to the BNB-ETH pool.\n<br>9. Confirm the transaction in your wallet pop-up.\n<br>10. You have successfully added liquidity to the BNB-ETH pool. You can see your position and your share in the pool. This means that when users trade BNB/ETH, you can receive trading fee rewards.\n<br>11. To manage your positions, go to the [Pool] tab from the top navigation bar and click on your position to add or remove liquidity.\n<br>\n<br>You will notice that there are some SLP tokens in your wallet from the transaction. SLP tokens are Sushiswap LP tokens and they represent the share you've deposited in the pool. All liquidity pools are labeled as SLP on SushiSwap, but they actually represent different pools.\n<br>\n<br>How to buy or sell SUSHI on Binance?\n<br>Apart from earning SUSHI from SushiSwap, the token can be purchased on cryptocurrency exchanges like Binance. On the other hand, if you want to sell SUSHI received from SushiSwap, you can transfer them to your wallet and sell them on crypto exchanges like Binance.\n<br>\n<br>1. Log in to your Binance account and click [Trade] from the top navigation bar to select the classic or advanced trading page.\n<br>2. On the right side of the screen, type “SUSHI” on the search bar to see the available trading pairs. In this example, we will use SUSHI/BUSD. Click [SUSHI/BUSD] to open the trading page.\n<br>3. Scroll down to the [Spot] box. You can buy or sell SUSHI here. Enter the amount of SUSHI you want to purchase or sell. Then, select the order type for your order. In this example, we will use a Market order. Click [Buy SUSHI] or [Sell SUSHI] to confirm the order.\n<br>\n<br>Is SushiSwap safe?\n<br>Depositing funds into a smart contract always carries the risk of bugs, even for audited and highly reputable projects. You should never deposit more than you can afford to lose and always DYOR before investing. In addition, due to the high gas costs on Ethereum, smaller deposits can have quite a lot of farming to do before they can actually turn a profit.\n<br>\n<br>Closing thoughts\n<br>SushiSwap is an exciting experiment that challenges the competitive advantage of an already successful DeFi protocol – Uniswap. Despite a fork of Uniswap, SushiSwap added new features to their protocol, with the key difference being community governance. In 2021, SushiSwap is also introducing an NFT platform to capitalize on the flourishing NFT market. \n<br>\n<br>SushiSwap had quickly overtaken many other DeFi projects in terms of total value locked since its launch, and it could continue to grow in popularity and traction. No matter how successful SushiSwap becomes in the end, it shows that no product or service has an indisputable advantage in DeFi.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tY7G487uEj",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
